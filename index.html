@@ -1,0 +1,136 @@
+<html>
+
+<head>
+  <title>Course!</title>
+
+  <!-- web-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wdth,wght@1,106.3,652&display=swap"
+    rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      height: 100vh;
+      width: 100vh;
+    }
+
+    #text_style {
+      font-size: large;
+      font-family: 'Georama', sans-serif;
+    }
+
+    .horiz {
+      display: inline-block;
+      background-color: #000000;
+    }
+
+    .visual {
+      background: linear-gradient(#000000 12%, #fafafa 10%);
+    }
+
+    .border_design {
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgb(222, 239, 255)
+    }
+  </style>
+</head>
+
+
+<body bgcolor="#000000">
+
+  <!-- <body class="visual"> -->
+
+  <img
+    src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fclc5l4%2FbtrbkhD2GFJ%2FfWr8L8b47CnAmvuV5BmTI0%2Fimg.png"
+    width="40px" alt="logo_image" style="position:relative; top:10px">
+  <h1 class="horiz" id="text_style" style="font-size: 30; color:#FAFAFA; position:relative; left: 10px;">Of - Course
+  </h1>
+
+  <div id="text_style" style="position: relative; top: 20px; left: 12px; color:#FAFAFA">Click the button on the map!
+  </div>
+
+  <div style="position: absolute;">
+
+    <div style="position: relative; top: 110px; left: 600px;" onclick="show_image(110, 600)">
+      <a href="/1">
+        <img
+          src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvOzH8%2FbtrbbUiPEgC%2FuHBFZkVUllNjZklXnoobJk%2Fimg.png"
+          width="30px"></img>
+      </a>
+    </div>
+
+    <div style="position: absolute;">
+
+      <div style="position: relative; top: 400px; left: 707px;" onclick="show_image(400, 707)">
+        <a href="/2">
+          <img
+            src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvOzH8%2FbtrbbUiPEgC%2FuHBFZkVUllNjZklXnoobJk%2Fimg.png"
+            width="30px"></img>
+        </a>
+
+      </div>
+
+      <div style="position: absolute;">
+
+        <div style="position: relative; top: 415px; left: 680px;" onclick="show_image(415, 680)">
+          <a href="/3">
+            <img
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvOzH8%2FbtrbbUiPEgC%2FuHBFZkVUllNjZklXnoobJk%2Fimg.png"
+              width="30px"></img>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div style="position: absolute;">
+
+        <div style="position: relative; top: 460px; left: 660px;" onclick="show_image(460, 660)">
+          <a href="/4">
+            <img
+              src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvOzH8%2FbtrbbUiPEgC%2FuHBFZkVUllNjZklXnoobJk%2Fimg.png"
+              width="30px"></img>
+          </a>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <img class="border_design"
+      src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FccFKEg%2Fbtra9Wutzu6%2FF1NewEDXZvWlClzWI3fTBk%2Fimg.png"
+      width="1120px" vspace="10px" hspace="10px"></img>
+
+
+    <button onClick="window.location.reload()" style="position: absolute; top: 0px; left: 260px;">Refresh</button>
+    <script>
+      var x = 0;
+      var y = 0;
+
+      var img = document.createElement("img");
+      img.src = "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDDmFW%2Fbtrbe6Dkgah%2Fr5vWWzKTP2jnLKCMbcj690%2Fimg.png";
+      img.width = 50;
+      img.height = 50;
+      img.alt = 'current location';
+      img.style.position = 'absolute';
+
+
+      function show_image(x, y) {
+        img.style.top = x + 'px';
+        img.style.left = y + 'px';
+        document.body.appendChild(img);
+      }
+
+
+    </script>
+
+
+</body>
+
+</html>
